@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcuSUBE</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="calcuSube">
+        <h1>CalcuSUBE</h1>
+        <h2>Calcula tu recarga SUBE mensual!</h2>
+        <div>
+            <h3 for="precioColectivo">Cuanto te sale el bondi?:</h3>
+            <input type="number" id="precioColectivo" placeholder="Ingresa el precio del bondi o 0 si no lo usas.">
+        </div>
+        <div>
+            <h3 for="precioSubte">Usas tambien el tren o subte? Cuanto pagas el boleto?:</h3>
+            <input type="number" id="precioSubte" placeholder="Ingresa el precio del tren/subte o 0 si no lo usas.">
+        </div>
+
+        <div class="idavuelta">
+            <h3 for="idaVuelta">Tilda para calcular ida y vuelta:</h3>
+            <input type="checkbox" id="idaVuelta">
+        </div>
+        
+        <div>
+            <h3 for="frecuenciaUso">Cuantos dias al mes viajas?</h3>
+            <input type="number" id="frecuenciaUso" placeholder="Ingrese la frecuencia de uso">
+        </div>
+        <button onclick="calcularRecarga()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
